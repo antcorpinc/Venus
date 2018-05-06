@@ -1,6 +1,4 @@
 @using System.Threading.Tasks
-@using Venus.Web.ViewComponents
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -21,8 +19,6 @@
 
 </head>
 <body>
-    <!-- Add Venus Specific Settings-->
-    @(await Component.InvokeAsync<AppSettingsViewComponent>())
     <div>
         @RenderBody()
     </div>
